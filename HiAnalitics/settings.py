@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'hianalitics.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'hianalitics.herokuapp.com', '35.185.126.151']
 
 
 # Application definition
