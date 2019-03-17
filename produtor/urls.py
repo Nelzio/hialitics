@@ -11,6 +11,12 @@ router.register('pavilhao', views.PavilhaoAPI)
 router.register('ciclo', views.CicloAPI)
 
 
+router.register('vacinacao', views.VacinacaoAPI)
+router.register('req-medicamento', views.RequisicaoRacaoAPI)
+router.register('consumo-racao', views.ConsumoRacaoAPI)
+router.register('mortalidade', views.MortalidadeAPI)
+router.register('peso', views.PesoAPI),
+
 urlpatterns = [
     path('api/', include(router.urls), name='url_produtor_api'),
 ]

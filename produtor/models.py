@@ -32,3 +32,43 @@ class Ciclo(models.Model):
     fim = models.DateField()
     quantidade = models.PositiveIntegerField()
 
+
+class Racao(models.Model):
+    tipo = models.CharField(max_length=255, null=False)
+
+class RequisicaoRacao(models.Model):
+    ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE)
+    quantidade = models.PositiveIntegerField()
+    racao = models.ForeignKey(Racao, on_delete=models.CASCADE)
+    data = models.DateTimeField(auto_now=True)
+
+
+class ConsumoRacao(models.Model):
+    ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE)
+    data = models.DateTimeField(auto_now=True)
+    quantidade = models.PositiveIntegerField()
+
+
+class Mortalidade(models.Model):
+    ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE)
+    data = models.DateTimeField(auto_now=True)
+    causa = models.CharField(max_length=255, null=False)
+    quantidade = models.PositiveIntegerField()
+
+
+class Peso(models.Model):
+    ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE)
+    data = models.DateTimeField(auto_now=True)
+    quantidade = models.PositiveIntegerField()
+
+
+class Vacinacao(models.Model):
+    ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE)
+    data = models.DateTimeField(auto_now=True)
+    tipo = models.CharField(max_length=255, null=False)
+    dias = models.PositiveIntegerField()
+
+
+
+
+

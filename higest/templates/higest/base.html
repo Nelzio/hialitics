@@ -177,24 +177,7 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">Dashboard 1</a>
-                                </li>
-                                <li>
-                                    <a href="index2.html">Dashboard 2</a>
-                                </li>
-                                <li>
-                                    <a href="index3.html">Dashboard 3</a>
-                                </li>
-                                <li>
-                                    <a href="index4.html">Dashboard 4</a>
-                                </li>
-                            </ul>
-                        </li>
+                        
                         <li class="has-sub">
                                 <a class="js-arrow" href="#">
                                     Produtores</a>
@@ -225,11 +208,25 @@
                                                 </li>
                                 </ul>
                             </li>
-                        <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
-                        </li>
                         
+                        <li class="has-sub">
+                                <a class="js-arrow" href="#">
+                                    <i class="fas fa-tachometer-alt"></i>Ciclo</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="{% url 'url_racao' %}">Racao</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'url_mor' %}">Mortalidade</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'url_peso' %}">Peso Medio</a>
+                                    </li>
+                                    <li>
+                                            <a href="{% url 'url_vacina' %}">Vacinacao</a>
+                                        </li>
+                                </ul>
+                            </li>
                     </ul>
                 </nav>
             </div>
@@ -417,6 +414,13 @@
         {% block content_page %}
 
         {% endblock  %}
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2019 Colorlib. All rights reserved. Template by <a href="https://hi-analitics">HiAnalitics</a>.</p>
+                    </div>
+                </div>
+            </div>
 
 
 

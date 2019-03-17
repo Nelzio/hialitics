@@ -1,0 +1,87 @@
+{% extends "higest/base.html" %}
+
+{% block  content_page %}
+{% load static %}
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <!--<button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>add item</button>-->
+                                        <div class="form-group">
+                                            <div class="row">
+                                                    <div class="col-md-6">
+                                                            <label for="country" class=" form-control-label">Apartir de</label>
+                                                            <input type="date"class="form-control">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <label for="country" class=" form-control-label">Ate</label>
+                                                            <input type="date" class="form-control">
+                                                    </div>
+                                            </div>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <!--<i class="zmdi zmdi-money"></i>-->
+                                            </div>
+                                            <div class="text">
+                                                <h2>1,060,386</h2>
+                                                <span>Galinhas vacinadas</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart4"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="title-1 m-b-25">Mortalidade por produtor</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>produtor</th>
+                                                <th>data</th>
+                                                <th class="text-right">Tipo</th>
+                                                <th class="text-right">Estado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>100398</td>
+                                                <td>iPhone X 64Gb Grey</td>
+                                                <td class="text-right">$999.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+               
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+            
+
+            {% endblock  %}

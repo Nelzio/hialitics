@@ -15,3 +15,19 @@ def add_integrado(request):
 
 def dtls_integrado(request):
     return render(request, 'higest/details.html')
+
+
+def racao(request):
+    return render(request, 'higest/racao.html')
+
+
+def mortalidade(request):
+    return render(request, 'higest/mortalidade.html')
+
+
+def vacinacao(request):
+    return render(request, 'higest/vacina.html')
+
+
+def peso(request):
+    return render(request, 'higest/peso.html')
