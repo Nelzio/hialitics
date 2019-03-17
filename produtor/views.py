@@ -13,7 +13,7 @@ class EnderecoAPI(viewsets.ModelViewSet):
 
 
 class ContactoAPI(viewsets.ModelViewSet):
-    queryset = Pavilhao.objects.all()
+    queryset = Contacto.objects.all()
     serializer_class = ContactoSerializer
 
 

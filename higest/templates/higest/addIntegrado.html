@@ -19,26 +19,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for produtor in data %}
-                                    {{data.name}}
-                                {% endfor %}
-                                <tr>
-                                    <td>2018-09-29 05:57</td>
-                                    <td>iPhone X 64Gb Grey</td>
-                                    <td class="text-right">$999.00</td>
-                                    <td class="text-right">
-                                        <a href="{% url 'url_dtls' %}" type="button" class="btn btn-outline-primary">Detalhes</a>
-                                        <button type="button" class="btn btn-outline-success">Aprovar</button>
-                                        <button type="button" class="btn btn-outline-danger">Reprovar</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2018-09-28 01:22</td>
+                                {% for produtor in produtors %}
                                     
-                                    <td>Samsung S8 Black</td>
-                                    <td class="text-right">$756.00</td>
-                                    <td class="text-right">$756.00</td>
-                                </tr>
+                                    <tr>
+                                            <td>{{produtor.nome}}</td>
+                                            <td>iPhone X 64Gb Grey</td>
+                                            <td class="text-right">$999.00</td>
+                                            <td class="text-right">
+                                                <a href="{% url 'url_dtls' %}" type="button" class="btn btn-outline-primary">Detalhes</a>
+                                                <button type="button" class="btn btn-outline-success">Aprovar</button>
+                                                <button type="button" class="btn btn-outline-danger">Reprovar</button>
+                                            </td>
+                                        </tr>
+                                {% endfor %}
+                                
                                
                             </tbody>
                         </table>
