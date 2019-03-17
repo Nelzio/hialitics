@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'produtor.apps.ProdutorConfig',
+    'higest.apps.HigestConfig',
 ]
 
-
+'''
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
@@ -56,6 +57,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+'''
 
 
 AUTH_USER_MODEL = 'accounts.User'

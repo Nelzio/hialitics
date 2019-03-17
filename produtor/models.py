@@ -5,8 +5,8 @@ class Endereco(models.Model):
     provincia = models.CharField(max_length=255, null=False)
     cidade = models.CharField(max_length=255, null=False)
     bairro = models.CharField(max_length=255, null=False)
-    lat = models.CharField(max_length=255, null=True)
-    longi = models.CharField(max_length=255, null=True)
+    lat = models.CharField(max_length=255, null=True, blank=True)
+    longi = models.CharField(max_length=255, null=True, blank=True)
 
 
 class Contacto(models.Model):
